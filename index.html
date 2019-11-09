@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Function Plot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
+
+
+  
+
+
+</head>
+
+<body>
+  <script src="https://unpkg.com/d3@3/d3.min.js"></script>
+  <script src="https://unpkg.com/function-plot@1/dist/function-plot.js"></script>
+
+
+<div class="containerb">
+      
+          <div id="header-container" class="p-3 mb-2 bg-primary text-black">
+             <span id="header">راسم منحنيات الدوال</span>
+            
+          </div>
+                 
+              
+          <span style="cursor:pointer;" class="openbtn" onclick="openNav()"> اعدادات المنحنيات &#9776;</span>
+
+
+ 
+<br>
+
+
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div dir="rtl" id="plot-settings">
+
+          <table>
+              <tr>
+                <th style="text-align: center;">اعدادات المنحنيات</th>
+              </tr>
+              <tr>
+                <td class="tableheadds">المنحنى الأول</td>
+              </tr>
+              <tr>
+                <td>
+                  <section id="func1">
+                    <label for="function"> دستور الدالة 1 : </label>
+                    <input id="function" type="text" value="x*x" onchange="plot();" dir="ltr" class="input" />
+                    <p></p>
+                    <label for="derivative"> مشتقة الدالة 1 : </label>
+                    <input type="text" id="der" value="2*x" onchange="plot();" dir="ltr" class="input" />
+                    <p></p>
+                    <p></p>
+                    <label for="color" class="color">لون المنحني : </label>
+                    <input type="color" id="color" onchange="plot();" dir="ltr" />
+                    <p></p>
+                  </section>
+                </td>
+              </tr>
+              <tr>
+                <td class="tableheadds">المنحنى الثاني</td>
+              </tr>
+              <tr>
+                <td>
+                  <section id="func1">
+                    <label for="function"> دستور الدالة 2 : </label>
+                    <input id="function2" type="text" value="x^3" onchange="plot();" dir="ltr" class="input" />
+                    <p></p>
+                    <label for="derivative"> مشتقة الدالة 2 : </label>
+                    <input type="text" id="der2" value="3*x^2" onchange="plot();" dir="ltr" class="input" />
+                    <p></p>
+                    <label for="color" class="color">لون المنحني : </label>
+                    <input type="color" id="color2" onchange="plot();" dir="ltr" value="Red" />
+                    <p></p>
+                  </section>
+                </td>
+              </tr>
+            </table>
+          </div>
+        
+    </div>
+
+    <div id="main" style="padding-top: 20px;" onclick="closeNav();">
+        
+        <div id="plot">
+            <div id="myFunction"></div>
+        </div>
+      
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.querySelector(".openbtn").style.right = "250px";
+      document.querySelector("#mySidenav").style.overflowX = "visible";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginRight= "0";
+      document.querySelector(".openbtn").style.right = "0px";
+      document.querySelector("#mySidenav").style.overflowX = "hidden";
+    }
+    closeNav()
+    </script>
+
+    
+
+
+      <script src="script.js"></script>
+</div>

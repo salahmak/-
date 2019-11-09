@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "Font";
+    src: url("Almarai-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Font2";
+    src: url("Cairo-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Font3";
+    src: url("MarkaziText-Regular.ttf");
+  }
+  
+  #myFunction {
+    touch-action: none;
+    float: left;
+  }
+  
+  .layer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0px;
+  }
+  
+  #plotSettings {
+    float: right;
+    padding: 0px;
+    height: 100%;
+  }
+
+  
+
+  #func1 {
+    margin-top: 20px;
+    font-family: Font2;
+    font-size: 15px;
+  }
+  
+  .input {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px rgb(15, 97, 74) solid;
+    border-radius: 7px;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  body {
+    margin-top: px;
+  }
+  table,
+  td,
+  th {
+    border: 1px solid black;
+    padding: 8px 15px;
+  }
+  
+.color {
+  float: right;
+}
+
+  .tableheadds {
+    text-align: center;
+    font-family: Font;
+    height: 30px;
+  }
+  
+  th {
+    font-family: Font;
+    font-size: 16px;
+    height: 50px;
+  }
+  
+  #header-container {
+    display: block;
+ 
+    margin-top: -35px;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  #header {
+    font-family: Font3;
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
+  .containerb {
+    margin-top: 30px;
+    display: block;
+    margin-bottom: -10px;
+    min-height: 100%;
+  }
+
+  .sidenav {
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    display: block;
+    margin-top: 82px;
+
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font: Font;
+    font-size: 20px;
+    display: block;
+    text-align: right;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    border: black 1px solid;
+    border-right: 0px;
+    padding: 9.5px 5px;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+
+
+.footer,
+.push {
+  height: 10%;
+}
+
+.footer {
+  background-color: #202020;
+}
+
+  @media screen and (max-width: 450px) {
+    .openbtn {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+ 
